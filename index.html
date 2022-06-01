@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <title>Formulários</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style type="text/css">
+
+
+  </style>
+</head>
+
+<body>
+ 
+    <div class="container">
+
+        <button class="iniciar" data-toggle="modal" data-target="#bloco1" data-target="#window1">Iniciar Quiz</button>
+
+        <!--PERGUNTA 1-->
+        <div class="modal fade" id="bloco1" id="window1">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="topo">
+                            <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                            <h5 class="modal-title">Quiz AIRONN</h5>
+                            <img class="img img-fluid" src="assets/images/fundo.jpg" alt="Futebol">
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                       
+                        <div class="container">
+                            <form>
+                                <h3 class="questao">1 - Qual é o time Brasileiro com mais títulos Nacionais ?</h3>
+                                <label class="row align-items-center"><input type="radio" name="pergunta1" value="1">São Paulo</label>
+                                <label class="row align-items-center"><input type="radio" name="pergunta1" value="2">Flamengo</label>
+                                <label class="row align-items-center"><input type="radio" name="pergunta1" value="3">Santos</label>
+                                <label class="row align-items-center"><input type="radio" name="pergunta1" value="4" id="correta1">Palmeiras</label>
+                                <label class="row align-items-center"><input type="radio" name="pergunta1" value="5">Corinthians</label>
+                            </form>
+                        </div>
+                        
+
+                       
+                    </div>
+                    <div class="modal-footer d-flex justify-content-around">
+                       <div data-dismiss="modal" data-toggle="modal" data-target="#bloco5" class="voltar">Voltar</div>
+
+                       <div class="btn btn-success" onclick="resultado()">Ver pontuação</div>
+
+                    <div data-dismiss="modal" data-toggle="modal" data-target="#bloco2" class="proximo" class="next" onclick="next1()" >Próximo</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--FINAL DO MODAL-->
+
+
+        <!--PERGUNTA 2-->
+        <div class="modal fade" id="bloco2">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="topo">
+                            <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                            <h5 class="modal-title">Quiz AIRONN</h5>
+                            <img class="img img-fluid" src="assets/images/fundo2.jpg" alt="Futebol">
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                        <form>
+                            <h3 class="questao">2 -Time Brasileiro com mais títulos internacionais ? </h3>
+                            <label class="row align-items-center"><input type="radio" name="pergunta1" value="1">Flamengo</label>
+                            <label class="row align-items-center"><input type="radio" name="pergunta1" value="2">Corinthians</label>
+                            <label class="row align-items-center"><input type="radio" name="pergunta1" value="3" id="correta2">São Paulo</label>
+                            <label class="row align-items-center"><input type="radio" name="pergunta1" value="4">Palmeiras</label>
+                            <label class="row align-items-center"><input type="radio" name="pergunta1" value="5">Internacional</label>
+                        </form>
+                        </div>
+
+                       
+                    </div>
+                    <div class="modal-footer d-flex justify-content-around">
+                       <div data-dismiss="modal" data-toggle="modal" data-target="#bloco1" class="btn btn-primary">Voltar</div>
+
+                       <div class="btn btn-success" onclick="resultado()">Ver pontuação</div>
+
+                       <div data-dismiss="modal" data-toggle="modal" data-target="#bloco3" class="btn btn-primary " class="next2" onclick="next2()"  >Próximo</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--FINAL DO MODAL-->
+
+
+        <!--PERGUNTA 3-->
+        <div class="modal fade" id="bloco3">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="topo">
+                            <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                            <h5 class="modal-title">Quiz AIRONN</h5>
+                            <img class="img img-fluid" src="assets/images/fundo3.jpg" alt="Futebol">
+                        </div>
+                    </div>
+                    <div class="modal-body d-flex justify-content-around">
+                        <form>
+                            <h3 class="questao">3 - Qual a seleção que foi campeã da 1º copa do mundo  ? </h3>
+                            <label class="row align-items-center"><input type="radio" name="pergunta1" value="1">Alemanha</label>
+                            <label class="row align-items-center"><input type="radio" name="pergunta1" value="2">Paraguai</label>
+                            <label class="row align-items-center"><input type="radio" name="pergunta1" value="3">Brasil</label>
+                            <label class="row align-items-center"><input type="radio" name="pergunta1" value="4">Argentina</label>
+                            <label class="row align-items-center"><input type="radio" name="pergunta1" value="5" id="correta3">Uruguai</label>
+                        </form>
+
+                       
+                    </div>
+                    <div class="modal-footer d-flex justify-content-around">
+                       <div data-dismiss="modal" data-toggle="modal" data-target="#bloco2" class="btn btn-primary">Voltar</div>
+
+                       <div class="btn btn-success" onclick="resultado()">Ver pontuação</div>
+
+                       <div data-dismiss="modal" data-toggle="modal" data-target="#bloco4" class="btn btn-primary " class="next3" onclick="next3()">Próximo</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--FINAL DO MODAL-->
+
+
+        <!--PERGUNTA 4-->
+        <div class="modal fade" id="bloco4">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="topo">
+                            <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                            <h5 class="modal-title">Quiz AIRONN</h5>
+                            <img class="img img-fluid" src="assets/images/fundo4.jpg" alt="Futebol">
+                        </div>
+                    </div>
+                    <div class="modal-body d-flex justify-content-around">
+                        <form>
+                            <h3 class="questao">4 - Qual o time que nunca foi rebaixado  ? </h3>
+                            <label class="row align-items-center"><input type="radio" name="pergunta1" value="1">Flamengo</label>
+                            <label class="row align-items-center"><input type="radio" name="pergunta1" value="2">Corinthians</label>
+                            <label class="row align-items-center"><input type="radio" name="pergunta1" value="3" id="correta4" >São Paulo</label>
+                            <label class="row align-items-center"><input type="radio" name="pergunta1" value="4">Palmeiras</label>
+                            <label class="row align-items-center"><input type="radio" name="pergunta1" value="5">Internacional</label>
+                        </form>
+
+                       
+                    </div>
+                    <div class="modal-footer d-flex justify-content-around">
+                       <div data-dismiss="modal" data-toggle="modal" data-target="#bloco3" class="btn btn-primary">Voltar</div>
+
+                       <div class="btn btn-success" onclick="resultado()">Ver pontuação</div>
+
+                       <div data-dismiss="modal" data-toggle="modal" data-target="#bloco5" class="btn btn-primary " class="next4" onclick="next4()">Próximo</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--FINAL DO MODAL-->
+
+
+        <!--PERGUNTA 5-->
+        <div class="modal fade" id="bloco5">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="topo">
+                            <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                            <h5 class="modal-title">Quiz 2022</h5>
+                            <img class="img img-fluid" src="assets/images/fundo5.jpg" alt="Futebol">
+                        </div>
+                    </div>
+                    <div class="modal-body d-flex justify-content-around">
+                        <form>
+                            <h3 class="questao">5 - Campeão da libertadores de 2021 ? </h3>
+                            <label class="row align-items-center"><input type="radio" name="pergunta1" value="1" class="errada1">Flamengo</label>
+                            <label class="row align-items-center"><input type="radio" name="pergunta1" value="2" class="errada1">Corinthians</label>
+                            <label class="row align-items-center"><input type="radio" name="pergunta1" value="3" class="errada1">São Paulo</label>
+                            <label class="row align-items-center"><input type="radio" name="pergunta1" value="4" id="correta5">Palmeiras</label>
+                            <label class="row align-items-center"><input type="radio" name="pergunta1" value="5" class="errada1">Internacional</label>
+                        </form>
+
+                       
+                    </div>
+                    <div class="modal-footer d-flex justify-content-around">
+                       <div data-dismiss="modal" data-toggle="modal" data-target="#bloco4" class="btn btn-primary">Voltar</div>
+
+                       <div class="btn btn-success" onclick="resultado()">Ver pontuação</div>
+
+                       <div data-dismiss="modal" data-toggle="modal" data-target="#bloco1" class="btn btn-primary " class="next5" onclick="next5()">Próximo</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--FINAL DO MODAL-->
+
+
+
+    </div>
+    
+    
+
+  <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+  
+  <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+
+</html>
